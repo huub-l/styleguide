@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="265px" height="167px" viewBox="0 0 265 167" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>B48EABB2-9521-4491-86E3-90C3DAA18A13@1x</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="251" height="153" rx="3.92"></rect>
+        <filter x="-4.8%" y="-5.9%" width="109.6%" height="115.7%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="3" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.05 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-3" x="0" y="0" width="73.2833684" height="92.6847458"></rect>
+    </defs>
+    <g id="Profile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="SP-05-13-Edit_Residence" transform="translate(-442.000000, -799.000000)">
+            <g id="img_font" transform="translate(441.000000, 795.000000)">
+                <g transform="translate(8.000000, 8.000000)">
+                    <g id="Rectangle-15" fill-rule="nonzero">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <use fill="#F0F0F0" xlink:href="#path-1"></use>
+                    </g>
+                    <g id="" transform="translate(164.000000, 44.000000)">
+                        <mask id="mask-4" fill="white">
+                            <use xlink:href="#path-3"></use>
+                        </mask>
+                        <use id="Mask" fill="#FFFFFF" xlink:href="#path-3"></use>
+                        <path d="M49.630875,39.7767108 C46.0525676,43.3972268 41.7228807,45.2074576 36.6416842,45.2074576 C31.5604878,45.2074576 27.2308008,43.3972268 23.6524934,39.7767108 C20.0741861,36.1561948 18.2850592,31.7754362 18.2850592,26.6343035 C18.2850592,21.4931708 20.0741861,17.1124122 23.6524934,13.4918962 C27.2308008,9.8713802 31.5604878,8.06114936 36.6416842,8.06114936 C41.7228807,8.06114936 46.0525676,9.8713802 49.630875,13.4918962 C53.2091824,17.1124122 54.9983092,21.4931708 54.9983092,26.6343035 C54.9983092,31.7754362 53.2091824,36.1561948 49.630875,39.7767108 Z M21.7202171,52.5627331 C27.1592443,51.2593473 32.1330169,50.6076642 36.6416842,50.6076642 C41.1503515,50.6076642 46.1241241,51.2593473 51.5631513,52.5627331 C57.0021785,53.8661188 61.9759511,56.0021912 66.4846184,58.9710143 C70.9932857,61.9398374 73.2475855,65.3068668 73.2475855,69.0722034 L73.2475855,78.4130879 L0.0357828947,78.4130879 L0.0357828947,69.0722034 C0.0357828947,65.3068668 2.29008272,61.9398374 6.79875,58.9710143 C11.3074173,56.0021912 16.2811899,53.8661188 21.7202171,52.5627331 Z" fill="#D8D8D8" mask="url(#mask-4)"></path>
+                    </g>
+                    <rect id="Rectangle-17" fill="#B5B5B5" x="164" y="120" width="73" height="18"></rect>
+                    <rect id="Rectangle-16" fill="#B5B5B5" opacity="0.399716332" x="0" y="8" width="251" height="18"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

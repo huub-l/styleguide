@@ -1,0 +1,21 @@
+//-------------------------------------------------------
+//- Modules :: Textarea
+//-------------------------------------------------------
+
+mixin group-textarea({label, require, placeholder, row, disabled})
+  .form-group.form-customize.form-textarea
+    label
+      | #{label}
+      if(require)
+        span.require *
+    if (disabled)
+      textarea.form-control.form-control--textarea(
+        placeholder= placeholder ? placeholder : null
+        rows= row ? row : null
+        disabled="disabled"
+      )
+    else
+      textarea.form-control.form-control--textarea(
+        placeholder= placeholder ? placeholder : null
+        rows= row ? row : null
+      )

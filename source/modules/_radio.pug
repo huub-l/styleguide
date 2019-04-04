@@ -1,0 +1,19 @@
+//-------------------------------------------------------
+//- Modules :: Radio
+//-------------------------------------------------------
+
+mixin group-input-radio({name, id, label, checked, disabled})
+  .form-group.input-radio-custom(
+    class= disabled ? `input-radio--disabled` : null
+  )
+    input.input-checkbox(
+      type= "radio"
+      name= name ? name : null
+      id= id ? id : null
+      checked= (checked !== true) ? false : true
+      disabled= (disabled !== true) ? false : true
+    )
+    if label
+      label(
+        for= id ? id : null
+      )= label

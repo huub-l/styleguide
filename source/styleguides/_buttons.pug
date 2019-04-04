@@ -1,0 +1,171 @@
+//-------------------------------------------------------
+//- Styleguides :: Buttons
+//-------------------------------------------------------
+
+h2 Buttons Type
+-
+  var buttonTypes = [
+    { type: 'primary', text: 'テキストデモ'},
+    { type: 'secondary', text: 'テキストデモ' },
+    { type: 'olight', text: 'テキストデモ' },
+    { type: 'blight', text: 'テキストデモ' },
+  ];
+
+.row
+  each val in buttonTypes
+    .col-3
+      .code-example
+        .demo
+          +buttons({
+            text: val.text,
+            type: val.type
+          })
+        pre
+          code
+            | +buttons({
+            |   text: '#{val.text}',
+            |   type: '#{val.type}'
+            | })
+
+//- Buttons :: Disable
+h2 Button Disable
+-
+  var buttonDisables = [
+    { type: 'primary', text: 'テキストデモ', disabled: 'disabled'},
+    { type: 'secondary', text: 'テキストデモ', disabled: 'disabled' },
+    { type: 'olight', text: 'テキストデモ', disabled: 'disabled' },
+    { type: 'blight', text: 'テキストデモ', disabled: 'disabled' },
+  ];
+
+.row
+  each val in buttonDisables
+    .col-3
+      .code-example
+        .demo
+          +buttons-disable({
+            text: val.text,
+            disabled: val.disabled,
+            type: val.type,
+          })
+        pre
+          code
+            | +buttons-disable({
+            |   text: '#{val.text}',
+            |   disabled: '#{val.disabled}', 
+            |   type: '#{val.type}'
+            | })
+
+//- Buttons :: Size
+h2 Button Size
+-
+  var buttonSizes = [
+    { text:'テキストデモ', type: 'primary', size: 'xsmall' },
+    { text:'テキストデモ', type: 'secondary', size: 'xsmall' },
+    { text:'テキストデモ', type: 'olight', size: 'xsmall' },
+    { text:'テキストデモ', type: 'blight', size: 'xsmall' },
+
+    { text:'テキストデモ', type: 'primary', size: 'small' },
+    { text:'テキストデモ', type: 'secondary', size: 'small' },
+    { text:'テキストデモ', type: 'olight', size: 'small' },
+    { text:'テキストデモ', type: 'blight', size: 'small' },
+
+    { text:'テキストデモ', type: 'primary', size: 'medium' },
+    { text:'テキストデモ', type: 'secondary', size: 'medium' },
+    { text:'テキストデモ', type: 'olight', size: 'medium' },
+    { text:'テキストデモ', type: 'blight', size: 'medium' },
+
+    { text:'テキストデモ', type: 'blight', size: 'large' },
+    { text:'テキストデモ', type: 'primary', size: 'large' },
+    { text:'テキストデモ', type: 'secondary', size: 'large' },
+    { text:'テキストデモ', type: 'olight', size: 'large' },
+  ];
+
+.row
+  each val in buttonSizes
+    .col-3
+      .code-example
+        .demo
+          +buttons({
+            text: val.text,
+            type: val.type,
+            size: val.size
+          })
+        pre
+          code
+            | +buttons({
+            |   text: '#{val.text}',
+            |   type: '#{val.type}'
+            |   size: '#{val.size}'
+            | })
+
+//- Buttons :: Icon
+h2 Button Icon
+-
+  var buttonIcons = [
+    { text:'テキストデモ', type: 'primary', iconFont: 'ion-android-done-all' },
+    { text:'テキストデモ', type: 'secondary', iconFont: 'ion-android-done-all' },
+    { text:'テキストデモ', type: 'olight', iconFont: 'ion-android-done-all' },
+    { text:'テキストデモ', type: 'blight', iconFont: '' },
+
+    { text:'テキストデモ', type: 'primary', size:'small', iconFont: 'ion-android-done-all'},
+    { text:'テキストデモ', type: 'secondary', size:'small', iconFont: 'ion-android-done-all'},
+    { text:'テキストデモ', type: 'olight', size:'small', iconFont: 'ion-android-done-all'},
+    { text:'テキストデモ', type: 'blight', size:'small', iconFont: 'ion-android-done-all'},
+  ];
+
+.row
+  each val in buttonIcons
+    .col-3
+      .code-example
+        .demo
+          +buttons({
+            text: val.text,
+            type: val.type,
+            size: val.size ? val.size: null,
+            iconFont: val.iconFont
+          })
+        pre
+          code
+            if (val.size)
+              | +buttons({
+              |   text: '#{val.text}',
+              |   type: '#{val.type}',
+              |   size: '#{val.size}',
+              |   iconFont: '#{val.iconFont}'
+              | })
+            else
+              | +buttons({
+              |   text: '#{val.text}',
+              |   type: '#{val.type}',
+              |   iconFont: '#{val.iconFont}'
+              | })
+  
+//- Buttons :: Full size
+h2 Button Full size
+-
+  var buttonFullSizes = [
+    { text:'テキストデモ', type: 'primary', size: 'large', isFull: true },
+    { text:'テキストデモ', type: 'secondary', size: 'large', isFull: true },
+    { text:'テキストデモ', type: 'olight', size: 'large', isFull: true },
+    { text:'テキストデモ', type: 'blight', size: 'large', isFull: true },
+  ];
+
+.row
+  each val in buttonFullSizes
+    .col-3
+      .code-example
+        .demo
+          +buttons({
+            text: val.text,
+            type: val.type,
+            size: val.size,
+            isFull: val.isFull,
+          })
+        pre
+          code
+            | +buttons({
+            |   text: '#{val.text}',
+            |   type: '#{val.type}',
+            |   size: '#{val.size}',
+            |   isFull: #{val.isFull}
+            | })

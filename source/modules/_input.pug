@@ -1,0 +1,54 @@
+//-------------------------------------------------------
+//- Modules :: Input
+//-------------------------------------------------------
+
+mixin group-input-field({label, id, placeholder, size, require, iconBefore, iconAfter, noteText, noticeError, disabled})
+  form.form-custom
+    .form-group.form-customize(
+      class= disabled ? `form-group--${disabled}` : null
+    )&attributes(attributes)
+      label.form__label(
+        for= id ? id : null
+      )
+        | #{label}
+        if(require)
+          span.require *
+      .input-field(
+        class= size ? `input-field--${size}` : null
+        class= iconBefore ? `input-field--icon-before` : null
+        class= iconAfter ? `input-field--icon-after` : null
+      )
+        if (iconBefore !== '' && iconBefore !== undefined)
+          span.input-field__icon.input-field__icon--before
+            i(class= iconBefore)
+        if (disabled)
+          input.form-control(
+            id= id ? id : null
+            placeholder= placeholder ? placeholder : null
+            type = type ? type : null
+            disabled = "disabled"
+          )
+        else 
+          input.form-control(
+            id= id ? id : null
+            placeholder= placeholder ? placeholder : null
+            type = type ? type : null
+          )
+        if (iconAfter !== '' && iconAfter !== undefined)
+          span.input-field__icon.input-field__icon--after.js-toggle-icon
+            i(class= iconAfter)
+      if (noteText)
+        p.note-text=noteText
+      if (noticeError)
+        p.error-notice
+          i.error-notice__icon.ion-close-circled
+          | #{noticeError}
+
+mixin group-input-field-readonly({label, value})
+  .form-group.form-customize&attributes(attributes)
+    label=label
+    input.form-control(
+        value= value
+        type = "text"
+        readonly= "readonly"
+    )

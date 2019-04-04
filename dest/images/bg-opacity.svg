@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="752px" height="170px" viewBox="0 0 752 170" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>546DA7B8-E716-4FBB-9ADF-C588FFE5CB2B@1x</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <linearGradient x1="49.999961%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#000000" stop-opacity="0.506227355" offset="0%"></stop>
+            <stop stop-color="#000000" stop-opacity="0" offset="23.3763024%"></stop>
+            <stop stop-color="#000000" stop-opacity="0" offset="51.7721353%"></stop>
+            <stop stop-color="#000000" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Work_detail" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.795991443">
+        <g id="SP-06-02-Work-detail_jobinfo" transform="translate(-150.000000, -100.000000)" fill="url(#linearGradient-1)" fill-rule="nonzero">
+            <g id="img_9f4d4f52d15315cff63dbac539a59229145378" transform="translate(150.000000, 100.000000)">
+                <rect id="img_opacity" x="0" y="0" width="752" height="170"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
