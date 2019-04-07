@@ -1,3 +1,8 @@
 $(document).ready(function() {
-  console.log('Done !');
+  $(".js-toggle-icon").each(function (index, element) {
+    $(this).click(function (e) { 
+      e.preventDefault();
+        $(this).toggleClass("show");
+    });
+  });
 });

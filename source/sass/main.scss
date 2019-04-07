@@ -35,11 +35,18 @@
 // 5. Components
 // -------------
 @import 'components/button';
+@import 'components/form';
+@import 'components/input';
+@import 'components/radio';
+@import 'components/textarea';
+@import 'components/checkbox';
+@import 'components/selectbox';
 
 // 6. Pages
 // --------
 @import 'pages/home';
 @import 'pages/page-list';
+@import 'pages/styleguide';
 
 // 7. Themes
 // ---------

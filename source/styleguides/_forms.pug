@@ -465,12 +465,12 @@ h2 Checkbox
         form.form-custom
           +group-input-checkbox({
             name: 'checkbox',
-            id: 'checkbox3',
+            id: 'checkbox4',
             checked: true
           })(class='input-checkbox-custom--no-label')
           +group-input-checkbox({
             name: 'checkbox',
-            id: 'checkbox4'
+            id: 'checkbox5'
           })(class='input-checkbox-custom--no-label')
           +group-input-checkbox({
             name: 'checkbox',
@@ -482,15 +482,168 @@ h2 Checkbox
           |form.form-custom
           |  +group-input-checkbox({
           |    name: 'checkbox',
-          |    id: 'checkbox3',
+          |    id: 'checkbox4',
           |    checked: true
           |  })(class='input-checkbox-custom--no-label')
           |  +group-input-checkbox({
           |    name: 'checkbox',
-          |    id: 'checkbox4'
+          |    id: 'checkbox5'
           |  })(class='input-checkbox-custom--no-label')
           |  +group-input-checkbox({
           |    name: 'checkbox',
           |    id: 'checkbox6',
           |    disabled: true
           |  })(class='input-checkbox-custom--no-label')
+
+h2 Selecbox
+.row
+  .col-6
+    .code-example
+      .demo
+        form.form-customize
+          -
+            var options = [
+              { value: 'owner', display: 'Owner' },
+              { value: 'member', display: 'Member' },
+              { value: 'viewer', display: 'Viewer' },
+              { value: 'non-member', display: 'Non-member' }
+            ];
+
+          +selectbox({
+            id: 'member',
+            label: 'Employee',
+            options
+          })
+      pre
+        code
+          |form.form-customize
+          |  -
+          |    var options = [
+          |      { value: 'owner', display: 'Owner' },
+          |      { value: 'member', display: 'Member' },
+          |      { value: 'viewer', display: 'Viewer' },
+          |      { value: 'non-member', display: 'Non-member' }
+          |    ];
+          |  +selectbox({
+          |    id: 'member',
+          |    label: 'Employee',
+          |    options
+          |  })
+  .col-6
+    .code-example
+      .demo
+        form.form-customize
+          -
+            var options = [
+              { value: 'owner', display: 'Owner' },
+              { value: 'member', display: 'Member' },
+              { value: 'viewer', display: 'Viewer' },
+              { value: 'non-member', display: 'Non-member' }
+            ];
+          +selectbox({
+            id: 'member',
+            disabled: 'disabled',
+            options
+          })
+      pre
+        code
+          |form.form-customize
+          |  -
+          |    var options = [
+          |      { value: 'owner', display: 'Owner' },
+          |      { value: 'member', display: 'Member' },
+          |      { value: 'viewer', display: 'Viewer' },
+          |      { value: 'non-member', display: 'Non-member' }
+          |    ];
+          |  +selectbox({
+          |    id: 'member',
+          |    disabled: 'disabled',
+          |    options
+          |  })
+
+.row
+  .col-6
+    .code-example
+      .demo
+        form.form-customize
+          -
+            var options = [
+              { value: 'owner', display: 'Owner' },
+              { value: 'member', display: 'Member' },
+              { value: 'viewer', display: 'Viewer' },
+              { value: 'non-member', display: 'Non-member' }
+            ];
+
+          +group-selectbox({
+            id: 'member',
+            label: 'Employee',
+            require: true,
+            options
+          })
+      pre
+        code
+          |form.form-customize
+          |  -
+          |    var options = [
+          |      { value: 'owner', display: 'Owner' },
+          |      { value: 'member', display: 'Member' },
+          |      { value: 'viewer', display: 'Viewer' },
+          |      { value: 'non-member', display: 'Non-member' }
+          |    ];
+          |  +group-selectbox({
+          |    id: 'member',
+          |    label: 'Employee',
+          |    require: true,
+          |    options
+          |  })
+  .col-6
+    .code-example
+      .demo
+          form.form-customize
+            -
+              var options = [
+                { value: 'owner', display: 'Owner' },
+                { value: 'member', display: 'Member' },
+                { value: 'viewer', display: 'Viewer' },
+                { value: 'non-member', display: 'Non-member' }
+              ];
+            +group-selectbox({
+              id: 'member',
+              label: 'Employee',
+              require: true,
+              options
+            })(class='form-error')
+      pre
+        code
+          |form.form-customize
+          |  -
+          |    var options = [
+          |      { value: 'owner', display: 'Owner' },
+          |      { value: 'member', display: 'Member' },
+          |      { value: 'viewer', display: 'Viewer' },
+          |      { value: 'non-member', display: 'Non-member' }
+          |    ];
+          |  +group-selectbox({
+          |    id: 'member',
+          |    label: 'Employee',
+          |    require: true,
+          |    options
+          |  })(class='form-error')
+.row
+  .col-12
+    .code-example
+      .demo
+        form.form-custom
+          +group-input-list-color({
+              label: 'List color for Ower and Staff',
+              id: 'example-12',
+              placeholder: 'Color code（ex：000000）'
+          })
+      pre
+        code
+          |form.form-custom
+          |  +group-input-list-color({
+          |      label: 'List color',
+          |      id: 'example-12',
+          |      placeholder: 'Color code（ex：000000）'
+          |  })

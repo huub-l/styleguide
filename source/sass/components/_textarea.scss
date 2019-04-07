@@ -1,0 +1,21 @@
+// ======================================================
+// Components :: Textarea
+// ======================================================
+
+.form-textarea .form-control {
+  border: 1px solid $cl-light-gray;
+  border-radius: 2px;
+}
+
+.form-textarea .form-control:focus {
+  border-color: $cl-white;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, .1);
+}
+
+.form-textarea .form-control:-ms-input-placeholder {
+  color: $cl-gray;
+}
+
+.form-textarea .form-control::placeholder {
+  color: $cl-gray;
+}

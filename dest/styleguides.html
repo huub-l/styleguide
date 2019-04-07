@@ -44,7 +44,7 @@
       </div>
       <div class="row">
         <div class="col-2">
-          <div class="list-group" id="v-pills-tab" role="tablist" aria-orientation="vertical" style="position: sticky; top: 0"><a class="list-group-item active" data-toggle="pill" role="tab" aria-selected="true" id="v-pills-colors-tab" href="#v-pills-colors" aria-controls="v-pills-colors">Colors</a><a class="list-group-item" data-toggle="pill" role="tab" aria-selected="true" id="v-pills-buttons-tab" href="#v-pills-buttons" aria-controls="v-pills-buttons">Buttons</a><a class="list-group-item" data-toggle="pill" role="tab" aria-selected="true" id="v-pills-forms-tab" href="#v-pills-forms" aria-controls="v-pills-forms">Forms</a>
+          <div class="list-group" id="v-pills-tab" role="tablist" aria-orientation="vertical" style="position: fixed; z-index: 1; width: 160px; min-width: 160px;"><a class="list-group-item active" data-toggle="pill" role="tab" aria-selected="true" id="v-pills-colors-tab" href="#v-pills-colors" aria-controls="v-pills-colors">Colors</a><a class="list-group-item" data-toggle="pill" role="tab" aria-selected="true" id="v-pills-buttons-tab" href="#v-pills-buttons" aria-controls="v-pills-buttons">Buttons</a><a class="list-group-item" data-toggle="pill" role="tab" aria-selected="true" id="v-pills-forms-tab" href="#v-pills-forms" aria-controls="v-pills-forms">Forms</a>
           </div>
         </div>
         <div class="col-10">
@@ -210,7 +210,7 @@
                     </div>
                     <pre><code>+buttons-disable({
   text: 'テキストデモ',
-  disabled: 'disabled', 
+  disabled: 'disabled',
   type: 'primary'
 })</code></pre>
                   </div>
@@ -222,7 +222,7 @@
                     </div>
                     <pre><code>+buttons-disable({
   text: 'テキストデモ',
-  disabled: 'disabled', 
+  disabled: 'disabled',
   type: 'secondary'
 })</code></pre>
                   </div>
@@ -234,7 +234,7 @@
                     </div>
                     <pre><code>+buttons-disable({
   text: 'テキストデモ',
-  disabled: 'disabled', 
+  disabled: 'disabled',
   type: 'olight'
 })</code></pre>
                   </div>
@@ -246,7 +246,7 @@
                     </div>
                     <pre><code>+buttons-disable({
   text: 'テキストデモ',
-  disabled: 'disabled', 
+  disabled: 'disabled',
   type: 'blight'
 })</code></pre>
                   </div>
@@ -261,9 +261,42 @@
                       </button>
                     </div>
                     <pre><code>+buttons({
-  text: 'テキストデモ',
-  type: 'primary'
-  size: 'xsmall'
+ text:'テキストデモ',
+ type: 'primary',
+ size: 'xsmall',
+})</code></pre>
+                  </div>
+                  <div class="code-example">
+                    <div class="demo">
+                      <button class="btn button button--primary button--small">テキストデモ
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ text:'テキストデモ',
+ type: 'primary',
+ size: 'small',
+})</code></pre>
+                  </div>
+                  <div class="code-example">
+                    <div class="demo">
+                      <button class="btn button button--primary button--medium">テキストデモ
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ text:'テキストデモ',
+ type: 'primary',
+ size: 'medium',
+})</code></pre>
+                  </div>
+                  <div class="code-example">
+                    <div class="demo">
+                      <button class="btn button button--primary button--large">テキストデモ
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ text:'テキストデモ',
+ type: 'primary',
+ size: 'large',
 })</code></pre>
                   </div>
                 </div>
@@ -274,9 +307,42 @@
                       </button>
                     </div>
                     <pre><code>+buttons({
-  text: 'テキストデモ',
-  type: 'secondary'
-  size: 'xsmall'
+ text:'テキストデモ',
+ type: 'secondary',
+ size: 'xsmall',
+})</code></pre>
+                  </div>
+                  <div class="code-example">
+                    <div class="demo">
+                      <button class="btn button button--secondary button--small">テキストデモ
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ text:'テキストデモ',
+ type: 'secondary',
+ size: 'small',
+})</code></pre>
+                  </div>
+                  <div class="code-example">
+                    <div class="demo">
+                      <button class="btn button button--secondary button--medium">テキストデモ
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ text:'テキストデモ',
+ type: 'secondary',
+ size: 'medium',
+})</code></pre>
+                  </div>
+                  <div class="code-example">
+                    <div class="demo">
+                      <button class="btn button button--secondary button--large">テキストデモ
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ text:'テキストデモ',
+ type: 'secondary',
+ size: 'large',
 })</code></pre>
                   </div>
                 </div>
@@ -287,9 +353,42 @@
                       </button>
                     </div>
                     <pre><code>+buttons({
-  text: 'テキストデモ',
-  type: 'olight'
-  size: 'xsmall'
+ text:'テキストデモ',
+ type: 'olight',
+ size: 'xsmall',
+})</code></pre>
+                  </div>
+                  <div class="code-example">
+                    <div class="demo">
+                      <button class="btn button button--olight button--small">テキストデモ
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ text:'テキストデモ',
+ type: 'olight',
+ size: 'small',
+})</code></pre>
+                  </div>
+                  <div class="code-example">
+                    <div class="demo">
+                      <button class="btn button button--olight button--medium">テキストデモ
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ text:'テキストデモ',
+ type: 'olight',
+ size: 'medium',
+})</code></pre>
+                  </div>
+                  <div class="code-example">
+                    <div class="demo">
+                      <button class="btn button button--olight button--large">テキストデモ
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ text:'テキストデモ',
+ type: 'olight',
+ size: 'large',
 })</code></pre>
                   </div>
                 </div>
@@ -300,165 +399,42 @@
                       </button>
                     </div>
                     <pre><code>+buttons({
-  text: 'テキストデモ',
-  type: 'blight'
-  size: 'xsmall'
+ text:'テキストデモ',
+ type: 'blight',
+ size: 'xsmall',
 })</code></pre>
                   </div>
-                </div>
-                <div class="col-3">
-                  <div class="code-example">
-                    <div class="demo">
-                      <button class="btn button button--primary button--small">テキストデモ
-                      </button>
-                    </div>
-                    <pre><code>+buttons({
-  text: 'テキストデモ',
-  type: 'primary'
-  size: 'small'
-})</code></pre>
-                  </div>
-                </div>
-                <div class="col-3">
-                  <div class="code-example">
-                    <div class="demo">
-                      <button class="btn button button--secondary button--small">テキストデモ
-                      </button>
-                    </div>
-                    <pre><code>+buttons({
-  text: 'テキストデモ',
-  type: 'secondary'
-  size: 'small'
-})</code></pre>
-                  </div>
-                </div>
-                <div class="col-3">
-                  <div class="code-example">
-                    <div class="demo">
-                      <button class="btn button button--olight button--small">テキストデモ
-                      </button>
-                    </div>
-                    <pre><code>+buttons({
-  text: 'テキストデモ',
-  type: 'olight'
-  size: 'small'
-})</code></pre>
-                  </div>
-                </div>
-                <div class="col-3">
                   <div class="code-example">
                     <div class="demo">
                       <button class="btn button button--blight button--small">テキストデモ
                       </button>
                     </div>
                     <pre><code>+buttons({
-  text: 'テキストデモ',
-  type: 'blight'
-  size: 'small'
+ text:'テキストデモ',
+ type: 'blight',
+ size: 'small',
 })</code></pre>
                   </div>
-                </div>
-                <div class="col-3">
-                  <div class="code-example">
-                    <div class="demo">
-                      <button class="btn button button--primary button--medium">テキストデモ
-                      </button>
-                    </div>
-                    <pre><code>+buttons({
-  text: 'テキストデモ',
-  type: 'primary'
-  size: 'medium'
-})</code></pre>
-                  </div>
-                </div>
-                <div class="col-3">
-                  <div class="code-example">
-                    <div class="demo">
-                      <button class="btn button button--secondary button--medium">テキストデモ
-                      </button>
-                    </div>
-                    <pre><code>+buttons({
-  text: 'テキストデモ',
-  type: 'secondary'
-  size: 'medium'
-})</code></pre>
-                  </div>
-                </div>
-                <div class="col-3">
-                  <div class="code-example">
-                    <div class="demo">
-                      <button class="btn button button--olight button--medium">テキストデモ
-                      </button>
-                    </div>
-                    <pre><code>+buttons({
-  text: 'テキストデモ',
-  type: 'olight'
-  size: 'medium'
-})</code></pre>
-                  </div>
-                </div>
-                <div class="col-3">
                   <div class="code-example">
                     <div class="demo">
                       <button class="btn button button--blight button--medium">テキストデモ
                       </button>
                     </div>
                     <pre><code>+buttons({
-  text: 'テキストデモ',
-  type: 'blight'
-  size: 'medium'
+ text:'テキストデモ',
+ type: 'blight',
+ size: 'medium',
 })</code></pre>
                   </div>
-                </div>
-                <div class="col-3">
                   <div class="code-example">
                     <div class="demo">
                       <button class="btn button button--blight button--large">テキストデモ
                       </button>
                     </div>
                     <pre><code>+buttons({
-  text: 'テキストデモ',
-  type: 'blight'
-  size: 'large'
-})</code></pre>
-                  </div>
-                </div>
-                <div class="col-3">
-                  <div class="code-example">
-                    <div class="demo">
-                      <button class="btn button button--primary button--large">テキストデモ
-                      </button>
-                    </div>
-                    <pre><code>+buttons({
-  text: 'テキストデモ',
-  type: 'primary'
-  size: 'large'
-})</code></pre>
-                  </div>
-                </div>
-                <div class="col-3">
-                  <div class="code-example">
-                    <div class="demo">
-                      <button class="btn button button--secondary button--large">テキストデモ
-                      </button>
-                    </div>
-                    <pre><code>+buttons({
-  text: 'テキストデモ',
-  type: 'secondary'
-  size: 'large'
-})</code></pre>
-                  </div>
-                </div>
-                <div class="col-3">
-                  <div class="code-example">
-                    <div class="demo">
-                      <button class="btn button button--olight button--large">テキストデモ
-                      </button>
-                    </div>
-                    <pre><code>+buttons({
-  text: 'テキストデモ',
-  type: 'olight'
-  size: 'large'
+ text:'テキストデモ',
+ type: 'blight',
+ size: 'large',
 })</code></pre>
                   </div>
                 </div>
@@ -472,9 +448,9 @@
                       </button>
                     </div>
                     <pre><code>+buttons({
-  text: 'テキストデモ',
+  text:'テキストデモ',
   type: 'primary',
-  iconFont: 'ion-android-done-all'
+  iconFont: "ion-android-done-all"
 })</code></pre>
                   </div>
                 </div>
@@ -485,9 +461,9 @@
                       </button>
                     </div>
                     <pre><code>+buttons({
-  text: 'テキストデモ',
+  text:'テキストデモ',
   type: 'secondary',
-  iconFont: 'ion-android-done-all'
+  iconFont: "ion-android-done-all"
 })</code></pre>
                   </div>
                 </div>
@@ -498,25 +474,27 @@
                       </button>
                     </div>
                     <pre><code>+buttons({
-  text: 'テキストデモ',
+  text:'テキストデモ',
   type: 'olight',
-  iconFont: 'ion-android-done-all'
+  iconFont: "ion-android-done-all"
 })</code></pre>
                   </div>
                 </div>
                 <div class="col-3">
                   <div class="code-example">
                     <div class="demo">
-                      <button class="btn button button--blight">テキストデモ
+                      <button class="btn button button--blight"><i class="button__icon ion-android-done-all"></i>テキストデモ
                       </button>
                     </div>
                     <pre><code>+buttons({
-  text: 'テキストデモ',
+  text:'テキストデモ',
   type: 'blight',
-  iconFont: ''
+  iconFont: "ion-android-done-all"
 })</code></pre>
                   </div>
                 </div>
+              </div>
+              <div class="row">
                 <div class="col-3">
                   <div class="code-example">
                     <div class="demo">
@@ -524,10 +502,10 @@
                       </button>
                     </div>
                     <pre><code>+buttons({
-  text: 'テキストデモ',
+  text:'テキストデモ',
   type: 'primary',
-  size: 'small',
-  iconFont: 'ion-android-done-all'
+  size: "small",
+  iconFont: "ion-android-done-all"
 })</code></pre>
                   </div>
                 </div>
@@ -538,10 +516,10 @@
                       </button>
                     </div>
                     <pre><code>+buttons({
-  text: 'テキストデモ',
+  text:'テキストデモ',
   type: 'secondary',
-  size: 'small',
-  iconFont: 'ion-android-done-all'
+  size: "small",
+  iconFont: "ion-android-done-all"
 })</code></pre>
                   </div>
                 </div>
@@ -552,10 +530,10 @@
                       </button>
                     </div>
                     <pre><code>+buttons({
-  text: 'テキストデモ',
+  text:'テキストデモ',
   type: 'olight',
-  size: 'small',
-  iconFont: 'ion-android-done-all'
+  size: "small",
+  iconFont: "ion-android-done-all"
 })</code></pre>
                   </div>
                 </div>
@@ -566,10 +544,10 @@
                       </button>
                     </div>
                     <pre><code>+buttons({
-  text: 'テキストデモ',
+  text:'テキストデモ',
   type: 'blight',
-  size: 'small',
-  iconFont: 'ion-android-done-all'
+  size: "small",
+  iconFont: "ion-android-done-all"
 })</code></pre>
                   </div>
                 </div>
@@ -586,7 +564,7 @@
   text: 'テキストデモ',
   type: 'primary',
   size: 'large',
-  isFull: true
+  isFull: true,
 })</code></pre>
                   </div>
                 </div>
@@ -600,7 +578,7 @@
   text: 'テキストデモ',
   type: 'secondary',
   size: 'large',
-  isFull: true
+  isFull: true,
 })</code></pre>
                   </div>
                 </div>
@@ -614,7 +592,7 @@
   text: 'テキストデモ',
   type: 'olight',
   size: 'large',
-  isFull: true
+  isFull: true,
 })</code></pre>
                   </div>
                 </div>
@@ -628,7 +606,7 @@
   text: 'テキストデモ',
   type: 'blight',
   size: 'large',
-  isFull: true
+  isFull: true,
 })</code></pre>
                   </div>
                 </div>
@@ -1142,12 +1120,12 @@
                     <div class="demo">
                       <form class="form-custom">
                         <div class="form-group input-checkbox-custom input-checkbox-custom--no-label">
-                          <input class="input-checkbox" type="checkbox" name="checkbox" id="checkbox3" checked="checked" />
-                          <label for="checkbox3"></label>
+                          <input class="input-checkbox" type="checkbox" name="checkbox" id="checkbox4" checked="checked" />
+                          <label for="checkbox4"></label>
                         </div>
                         <div class="form-group input-checkbox-custom input-checkbox-custom--no-label">
-                          <input class="input-checkbox" type="checkbox" name="checkbox" id="checkbox4" />
-                          <label for="checkbox4"></label>
+                          <input class="input-checkbox" type="checkbox" name="checkbox" id="checkbox5" />
+                          <label for="checkbox5"></label>
                         </div>
                         <div class="form-group input-checkbox-custom input-checkbox-custom--no-label">
                           <input class="input-checkbox" type="checkbox" name="checkbox" id="checkbox6" disabled="disabled" />
@@ -1158,18 +1136,186 @@
                     <pre><code>form.form-custom
  +group-input-checkbox({
    name: 'checkbox',
-   id: 'checkbox3',
+   id: 'checkbox4',
    checked: true
  })(class='input-checkbox-custom--no-label')
  +group-input-checkbox({
    name: 'checkbox',
-   id: 'checkbox4'
+   id: 'checkbox5'
  })(class='input-checkbox-custom--no-label')
  +group-input-checkbox({
    name: 'checkbox',
    id: 'checkbox6',
    disabled: true
  })(class='input-checkbox-custom--no-label')</code></pre>
+                  </div>
+                </div>
+              </div>
+              <h2>Selecbox</h2>
+              <div class="row">
+                <div class="col-6">
+                  <div class="code-example">
+                    <div class="demo">
+                      <form class="form-customize">
+                        <div class="form-group form-customize">
+                          <select class="custom-select">
+                            <option value="owner">Owner</option>
+                            <option value="member">Member</option>
+                            <option value="viewer">Viewer</option>
+                            <option value="non-member">Non-member</option>
+                          </select>
+                        </div>
+                      </form>
+                    </div>
+                    <pre><code>form.form-customize
+ -
+   var options = [
+     { value: 'owner', display: 'Owner' },
+     { value: 'member', display: 'Member' },
+     { value: 'viewer', display: 'Viewer' },
+     { value: 'non-member', display: 'Non-member' }
+   ];
+ +selectbox({
+   id: 'member',
+   label: 'Employee',
+   options
+ })</code></pre>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="code-example">
+                    <div class="demo">
+                      <form class="form-customize">
+                        <div class="form-group form-customize">
+                          <select class="custom-select custom-select--disabled" disabled="disabled">
+                            <option value="owner">Owner</option>
+                            <option value="member">Member</option>
+                            <option value="viewer">Viewer</option>
+                            <option value="non-member">Non-member</option>
+                          </select>
+                        </div>
+                      </form>
+                    </div>
+                    <pre><code>form.form-customize
+ -
+   var options = [
+     { value: 'owner', display: 'Owner' },
+     { value: 'member', display: 'Member' },
+     { value: 'viewer', display: 'Viewer' },
+     { value: 'non-member', display: 'Non-member' }
+   ];
+ +selectbox({
+   id: 'member',
+   disabled: 'disabled',
+   options
+ })</code></pre>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-6">
+                  <div class="code-example">
+                    <div class="demo">
+                      <form class="form-customize">
+                        <div class="form-group form-customize">
+                          <label for="member">Employee<span class="require">*</span></label>
+                          <select class="custom-select">
+                            <option value="owner">Owner</option>
+                            <option value="member">Member</option>
+                            <option value="viewer">Viewer</option>
+                            <option value="non-member">Non-member</option>
+                          </select>
+                        </div>
+                      </form>
+                    </div>
+                    <pre><code>form.form-customize
+ -
+   var options = [
+     { value: 'owner', display: 'Owner' },
+     { value: 'member', display: 'Member' },
+     { value: 'viewer', display: 'Viewer' },
+     { value: 'non-member', display: 'Non-member' }
+   ];
+ +group-selectbox({
+   id: 'member',
+   label: 'Employee',
+   require: true,
+   options
+ })</code></pre>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="code-example">
+                    <div class="demo">
+                      <form class="form-customize">
+                        <div class="form-group form-customize form-error">
+                          <label for="member">Employee<span class="require">*</span></label>
+                          <select class="custom-select">
+                            <option value="owner">Owner</option>
+                            <option value="member">Member</option>
+                            <option value="viewer">Viewer</option>
+                            <option value="non-member">Non-member</option>
+                          </select>
+                        </div>
+                      </form>
+                    </div>
+                    <pre><code>form.form-customize
+ -
+   var options = [
+     { value: 'owner', display: 'Owner' },
+     { value: 'member', display: 'Member' },
+     { value: 'viewer', display: 'Viewer' },
+     { value: 'non-member', display: 'Non-member' }
+   ];
+ +group-selectbox({
+   id: 'member',
+   label: 'Employee',
+   require: true,
+   options
+ })(class='form-error')</code></pre>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <div class="code-example">
+                    <div class="demo">
+                      <form class="form-custom">
+                        <div class="form-group form-list-color">
+                          <label class="form__label" for="example-12">List color for Ower and Staff</label>
+                          <div class="list-box d-flex justify-content-between align-items-center">
+                            <div class="unstyled list-box__color d-flex justify-content-start">
+                              <li class="list-box__item" style="background:#373737"></li>
+                              <li class="list-box__item" style="background:#555"></li>
+                              <li class="list-box__item" style="background:#888"></li>
+                              <li class="list-box__item" style="background:#b5b5b5"></li>
+                              <li class="list-box__item" style="background:#f0f0f0"></li>
+                              <li class="list-box__item" style="background:#ff6b00"></li>
+                              <li class="list-box__item" style="background:#e46000"></li>
+                              <li class="list-box__item" style="background:#ff9359"></li>
+                              <li class="list-box__item" style="background:#083ea9"></li>
+                              <li class="list-box__item" style="background:#3471eb"></li>
+                              <li class="list-box__item" style="background:#548dff"></li>
+                              <li class="list-box__item" style="background:#fff"></li>
+                              <li class="list-box__item" style="background:#f05151"></li>
+                              <li class="list-box__item" style="background:#fa8383"></li>
+                              <li class="list-box__item" style="background:#43aa49"></li>
+                              <li class="list-box__item" style="background:#ec3f3f"></li>
+                              <li class="list-box__item" style="background:#4a90e2"></li>
+                            </div>
+                            <div class="list-box__input">
+                              <input class="form-control" id="example-12" placeholder="Color code（ex：000000）" type="text" /><i class="icon-images icon-images--color-picker"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                    <pre><code>form.form-custom
+ +group-input-list-color({
+     label: 'List color',
+     id: 'example-12',
+     placeholder: 'Color code（ex：000000）'
+ })</code></pre>
                   </div>
                 </div>
               </div>

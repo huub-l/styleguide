@@ -3,7 +3,7 @@
 // ======================================================
 
 .button {
-  font-weight: 600;
+  font-weight: $font-weight-bold;
   font-size: 13px;
   line-height: 40px;
   height: 40px;
@@ -15,11 +15,11 @@
   &--primary {
     background-color: $cl-orange;
     color: $cl-white;
-    box-shadow: 0 2px 10px 0 rgba($cl-orange, .2);
 
     &:hover {
       background-color: $cl-dark-orange;
       color: $cl-white;
+      box-shadow: 0 2px 10px 0 rgba($cl-orange, .2);
     }
 
     &.button--disabled:hover {
@@ -31,11 +31,11 @@
   &--secondary {
     background-color: $cl-dark-gray;
     color: $cl-white;
-    box-shadow: 0 2px 10px 0 rgba($cl-black, .1);
 
     &:hover {
       background-color: $cl-black;
       color: $cl-white;
+      box-shadow: 0 2px 10px 0 rgba($cl-black, .1);
     }
 
     &.button--disabled:hover {
@@ -64,7 +64,7 @@
     background-color: $cl-white;
     color: $cl-black;
     border: 1px solid $cl-dark-gray;
-    font-weight: 400;
+    font-weight: $font-weight-base;
 
     &:hover {
       border-color: $cl-black;

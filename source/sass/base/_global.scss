@@ -31,3 +31,23 @@ ol {
   list-style: none;
   padding: 0;
 }
+
+.h1 {
+  font-size: $font-size-large;
+  font-weight: $font-weight-bold;
+}
+
+.h2 {
+  font-size: $font-size-medium;
+  font-weight: $font-weight-bold;
+}
+
+.h3 {
+  font-size: $font-size-base;
+  font-weight: $font-weight-bold;
+}
+
+.require {
+  color: $cl-red;
+  font-weight: $font-weight-light;
+}

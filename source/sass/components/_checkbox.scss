@@ -1,0 +1,123 @@
+// ======================================================
+// Components :: Checkbox
+// ======================================================
+
+.checkbox-replace {
+  display: flex;
+  position: relative;
+
+  &__label {
+    background-color: $cl-white;
+    border: 1px solid $cl-light-gray;
+    border-radius: 3px;
+    cursor: pointer;
+    flex: 0 0 20px;
+    height: 20px;
+    margin: 0 15px 0 0;
+    position: relative;
+    transition: all 300ms ease-in-out;
+
+    input {
+      position: absolute;
+      visibility: hidden;
+    }
+
+    .icon-checked {
+      color: $cl-white;
+      font-size: 14px;
+      opacity: 0;
+      position: absolute;
+      right: 0;
+      text-align: center;
+      transition: 250ms all cubic-bezier(.455, .03, .515, .955);
+    }
+  }
+
+  &__content {
+    flex-grow: 1;
+    font-weight: $font-weight-light;
+  }
+}
+
+.checkbox-replace.checked .checkbox-replace__label {
+  background-color: $cl-blue;
+  border-color: $cl-blue;
+
+  .icon-checked {
+    opacity: 1;
+  }
+}
+
+.input-checkbox-custom {
+  position: relative;
+  margin-bottom: 8px;
+  height: 22px;
+
+  label {
+    padding-left: 35px;
+    margin-bottom: 0;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    color: $cl-black;
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: -2px;
+      left: 0;
+      width: 24px;
+      height: 24px;
+      background-color: $cl-white;
+      border: 1px solid $cl-light-gray;
+      border-radius: 2px;
+    }
+
+    &:after {
+      content: '';
+      width: 11px;
+      height: 6px;
+      border-left: 2px solid $cl-orange;
+      border-bottom: 2px solid $cl-orange;
+      position: absolute;
+      top: 5px;
+      left: 7px;
+      transform: rotate(-55deg);
+      opacity: 0;
+    }
+
+    span {
+      font-size: 12px;
+      font-weight: $font-weight-light;
+      color: $cl-gray;
+    }
+  }
+
+  input[type='checkbox'] {
+    position: absolute;
+    visibility: hidden;
+
+    &:checked ~ label {
+      &:before {
+        border-color: $cl-light-orange-1;
+      }
+
+      &:after {
+        opacity: 1;
+      }
+    }
+  }
+
+  &--inline {
+    display: inline-block;
+
+    &:not(:first-child) {
+      margin-left: 20px;
+    }
+  }
+}
+
+.input-checkbox--disabled {
+  opacity: .8;
+}

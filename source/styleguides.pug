@@ -1,8 +1,8 @@
 //-
 //- This page only for Frontend Developer
-
+        
 extends modules/layout/_page-other
-
+    
 block head
   +head('Styleguides')
   style.
@@ -54,7 +54,7 @@ block main
         #v-pills-tab.list-group(
           role="tablist"
           aria-orientation="vertical"
-          style="position: sticky; top: 0"
+          style="position: fixed; z-index: 1; width: 160px; min-width: 160px;"
         )
           each val, index in components
             - var findFirstItem = index === 0
@@ -83,6 +83,6 @@ block main
                 when 'buttons'
                   include styleguides/_buttons
                 when 'forms'
-                  include styleguides/_forms
+                  include styleguides/_forms  
                 default
                   - throw new Error('"val.id" must be in "components" variable')

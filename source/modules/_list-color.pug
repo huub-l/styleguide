@@ -1,0 +1,21 @@
+//-------------------------------------------------------
+//- Modules :: List Color
+//-------------------------------------------------------
+
+mixin group-input-list-color({label, id, placeholder})
+  .form-group.form-list-color
+    label.form__label(
+        for= id ? id : null
+      )
+        | #{label}
+    .list-box.d-flex.justify-content-between.align-items-center
+      .unstyled.list-box__color.d-flex.justify-content-start
+        each item in ["#373737", "#555", "#888", "#b5b5b5", "#f0f0f0", "#ff6b00", "#e46000", "#ff9359", "#083ea9", "#3471eb", "#548dff", "#fff", "#f05151", "#fa8383", "#43aa49", "#ec3f3f", "#4a90e2"]
+          li.list-box__item(style= `background:${item}`)
+      .list-box__input
+        input.form-control(
+            id= id ? id : null
+            placeholder= placeholder ? placeholder : null
+            type = type ? type : "text"
+          )
+        i.icon-images.icon-images--color-picker
